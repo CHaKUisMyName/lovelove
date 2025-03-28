@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>🎂Happy BirthDay to Nubenz❤️</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Dosis", "Mali", "Kanit", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      /* aura background */
+      .aura {
+        background: linear-gradient(
+          115deg,
+          hsla(33, 75%, 89%, 0.893),
+          #a7e6f780,
+          rgba(251, 216, 233, 0.507),
+          rgba(198, 247, 218, 0.756),
+          #faecc599
+        );
+        background-size: 300% 300%;
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+        animation: aurora-gradient 10s ease infinite;
+        z-index: -1;
+      }
+
+      @keyframes aurora-gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      .swiper {
+        width: 420px;
+        height: 300px;
+      }
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .music-player {
+        background: white;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        position: relative;
+        animation: float 3s ease-in-out infinite;
+      }
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+      .controls button {
+        background: none;
+        border: none;
+        font-size: 1.5em;
+        cursor: pointer;
+      }
+      .progress-bar {
+        width: 100%;
+        height: 5px;
+        background: #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-top: 10px;
+      }
+      .progress {
+        width: 0%;
+        height: 100%;
+        background: #3498db;
+        transition: width 0.1s;
+      }
+
+      .stars {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: transparent;
+        z-index: -1;
+      }
+
+      .star {
+        width: 2px;
+        height: 2px;
+        background: white;
+        position: absolute;
+        border-radius: 50%;
+        animation: twinkle 2s infinite ease-in-out;
+      }
+
+      @keyframes twinkle {
+        0%, 100% {
+          opacity: 0.5;
+        }
+        50% {
+          opacity: 1;
+        }
+    }
+
+    h1 {
+    font-size: 48px;
+    color: #333;
+}
+
+.floating-second {
+    animation: 5s ease-in-out 0s infinite normal none running smooth-float;
+}
+.starFirst{
+  position: absolute;
+  top: 7rem;
+  right: 50rem;
+  height: 3rem;
+  width: 3rem;
+}
+ @keyframes smooth-float{
+    0% {
+      transform: translate(0);
+    }
+
+    25% {
+        transform: translate(4px, -1px);
+    }
+    50% {
+        transform: translateY(7px);
+    }
+    75% {
+        transform: translateY(-4px);
+    }
+    100% {
+        transform: translate(0);
+    }
+  }
+  .hideme
+{
+    opacity:0;
+}
+.otp-input {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            font-size: 20px;
+            margin: 5px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+        }
+#success-message {
+            display: none; /* ซ่อน div ในตอนแรก */
+            
+        }
+    </style>
+  </head>
+  <body class="">
+    <div class="aura"></div>
+    <div class="stars"></div>
+    <div class="container text-center">
+      <div class="row mt-5 pt-5 justify-content-center">
+        <div class="col-4">
+          <img src="./images/star.svg" class="floating-second starFirst" />
+          <h1 class="display-1 fw-bold">KUY</h1>
+          <h2>Wowww 🎉</h2>
+        </div>
+      </div>
+
+      <div class="row mt-5 pt-5">
+        <div class="col-12">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img
+                  src="./images/ayla-meinberg-AL2-t0GrSko-unsplash.jpg"
+                  alt="1" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/freestocks-Q1N9vX2Sp1g-unsplash.jpg"
+                  alt="2" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/tessa-rampersad-5toRIWF2GUY-unsplash.jpg"
+                  alt="3" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row mt-5 pt-5 justify-content-center">
+        <div class="col-md-4 col-sm-8">
+            <div class="music-player">
+                <p><strong>แค่มีเธอให้รัก ก็เป็นโชคดีของฉัน</strong></p>
+                <p>No One Else</p>
+                <audio id="audio" src="./audios/song.mp3" autoplay></audio>
+                <div class="progress-bar"><div class="progress"></div></div>
+                <div class="controls">
+                    <button onclick="prevTrack()">&#9664;&#9664;</button>
+                    <button id="clickPlay" onclick="togglePlay()">
+                      <i id="play" class="fa-solid fa-play"></i>
+                    </button>
+                    <button onclick="nextTrack()">&#9654;&#9654;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+      <div class="row mt-2 pt-2 justify-content-center">
+        <div class="col-md-4 col-sm-8">
+          <div class="card border-0" style="background-color: #ffffff77">
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                minima vel hic natus iure eum voluptate reiciendis dolor
+                aliquid, iste dignissimos debitis illo quidem nam explicabo
+                culpa esse accusantium aperiam?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-2 pt-2 justify-content-center">
+        <div class="col-md-4">
+          <h1 class="display-1 fw-bold">KUY</h1>
+        </div>
+      </div>
+      <div id="otp-container" class="row mt-2 pt-2 justify-content-center">
+        <div class="col-4 text-center hideme justify-content-center d-flex">
+            <input type="text" class="otp-input form-control" maxlength="1" id="otp1">
+            <input type="text" class="otp-input form-control" maxlength="1" id="otp2">
+            <input type="text" class="otp-input form-control" maxlength="1" id="otp3">
+            <input type="text" class="otp-input form-control" maxlength="1" id="otp4">
+            <input type="text" class="otp-input form-control" maxlength="1" id="otp5">
+            <input type="text" class="otp-input form-control" maxlength="1" id="otp6">
+          <!-- <div class="card p-4 shadow hideme">
+            <h3>Box 3</h3>
+            <p>Fade in when scrolled into view. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis obcaecati voluptas voluptatum voluptatem provident, vitae corrupti aut non porro laboriosam veniam perferendis quibusdam reprehenderit autem quo at incidunt placeat ducimus?</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                minima vel hic natus iure eum voluptate reiciendis dolor
+                aliquid, iste dignissimos debitis illo quidem nam explicabo
+                culpa esse accusantium aperiam?
+              </p>
+          </div> -->
+        </div>
+        <!-- แสดงข้อความเมื่อกรอกครบ -->
+        
+      </div>
+      <div id="success-message" class="row mt-2 pt-2 justify-content-center">
+            <div class="card border-0 col-md-4 col-sm-8" style="background-color: #ffffff77">
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                minima vel hic natus iure eum voluptate reiciendis dolor
+                aliquid, iste dignissimos debitis illo quidem nam explicabo
+                culpa esse accusantium aperiam?
+              </p>
+            </div>
+          </div>
+        </div>
+      <div class="row mt-2 pt-2 justify-content-center">
+        <div class="col-12">
+          <h1>KUYYYYYY</h1>
+          <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                minima vel hic natus iure eum voluptate reiciendis dolor
+                aliquid, iste dignissimos debitis illo quidem nam explicabo
+                culpa esse accusantium aperiam?
+              </p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(() => {
+        const swiper = new Swiper(".swiper", {
+          effect: "cards",
+          grabCursor: true,
+        });
+         /* Every time the window is scrolled ... */
+        $(window).scroll(function () {
+        $(".hideme").each(function () {
+            var objectTop = $(this).offset().top;
+            var windowBottom = $(window).scrollTop() + $(window).height();
+
+            if (windowBottom > objectTop + 10) { // +100 เพื่อให้เริ่มแสดงก่อนถึง viewport
+                $(this).animate({ opacity: 1 }, 500); // ใช้ animate เพื่อให้ fade in
+            }
+        });
+        $(".otp-input").on("input", function () {
+                var inputVal = $(this).val();
+                if (inputVal.length === 1) {
+                    $(this).next(".otp-input").focus();
+                }
+                // // ตรวจสอบว่ากรอกครบทุกช่องหรือยัง
+                // if ($(".otp-input").filter(function () { return this.value.length === 0; }).length === 0) {
+                //     $("#otp-container").hide(); // ซ่อนช่องกรอก OTP
+                //     $("#otp-container").addClass('d-none'); // ซ่อนช่องกรอก OTP
+                //     $("#success-message").fadeIn(); // แสดงข้อความ
+                //     $("#success-message").addClass('d-flex'); // แสดงข้อความ
+                // }
+                checkOTP();
+            });
+
+            $(".otp-input").on("keydown", function (e) {
+                if (e.key === "Backspace" && $(this).val() === "") {
+                    $(this).prev(".otp-input").focus();
+                }
+            });
+    });
+      });
+      let audio = document.getElementById("audio");
+      //   let progress = document.querySelector(".progress");
+
+        function togglePlay() {
+            if (audio.paused) {
+                audio.play();
+                $('#play').removeClass("fa-play");
+                $('#play').addClass("fa-pause");
+
+            } else {
+                audio.pause();
+                $('#play').addClass(" fa-play");
+                $('#play').removeClass("fa-pause");
+            }
+        }
+        function prevTrack() {
+           audio.currentTime = 0;
+        }
+        function nextTrack() {
+           audio.currentTime = audio.duration;
+          }
+
+        audio.addEventListener("timeupdate", () => {
+          const progress = document.querySelector(".progress");
+            let percentage = (audio.currentTime / audio.duration) * 100;
+            progress.style.width = percentage + "%";
+        });
+      function checkOTP() {
+                var otpValue = $(".otp-input").map(function () {
+                    return $(this).val();
+                }).get().join("");
+
+                if (otpValue === "kuykuy") {
+                    $("#otp-container").hide(); // ซ่อนช่องกรอก OTP
+                    $("#otp-container").addClass('d-none'); // ซ่อนช่องกรอก OTP
+                    $("#success-message").fadeIn(); // แสดงข้อความ
+                    $("#success-message").addClass('d-flex'); // แสดงข้อความ
+                }
+            }
+
+    </script>
+  </body>
+</html>
